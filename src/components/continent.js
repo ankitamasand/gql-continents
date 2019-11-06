@@ -37,7 +37,7 @@ class Continent extends Component {
                 {name}
               </Typography>
               {countries.map(country => {
-                return <Country data={country} />;
+                return <Country key={country.code} data={country} />;
               })}
             </div>
           );

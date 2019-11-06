@@ -36,11 +36,11 @@ class ContinentsList extends Component {
             <List component="nav">
               {data.continents.map(continent => {
                 return (
-                  <Link to={`/continent/${continent.code}`}>
-                    <ListItem
-                      className="continent"
-                      onClick={this.showContinentDetails}
-                    >
+                  <Link
+                    to={`/continent/${continent.code}`}
+                    key={continent.code}
+                  >
+                    <ListItem className="continent">
                       <Avatar className="blue-avatar">{continent.code}</Avatar>
                       <ListItemText primary={continent.name} />
                     </ListItem>
