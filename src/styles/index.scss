@@ -1,0 +1,50 @@
+@import "./colors.scss";
+
+/* Common Styles */
+.header {
+  padding: 10px;
+  a {
+    text-decoration: none;
+    color: $color-white;
+  } 
+}
+
+.loader {
+  margin: 60px;
+}
+
+nav {
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Continent Pages styles */
+
+.continent {
+  cursor: pointer;
+}
+
+.continent-details {
+  margin: 15px;
+
+  h2 {
+    margin-bottom: 20px;
+    font-family: cursive;
+    font-weight: 600;
+  }
+
+  .continent-details-card {
+    margin-bottom: 20px;
+  }
+}
+
+.blue-avatar {
+  background-color: $color-blue !important;
+  color: $color-white;
+  padding: 3px;
+}
+
+.continent-card {
+  margin-top: 20px;
+}
